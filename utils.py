@@ -28,3 +28,7 @@ def data_viz(df, xdata, ydata, xlabel, ylabel, title):
 def dynamic_Viz(df, xdata, ydata, title):
     fig = px.box(df, x=xdata, y=ydata, color=xdata, hover_name=xdata, title=title )
     fig.show()
+
+def seaborn_graph(df):
+    sns.pairplot(df)
+    plt.show()
